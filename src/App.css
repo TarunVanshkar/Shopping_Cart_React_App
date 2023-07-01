@@ -1,38 +1,155 @@
-.App {
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+  height: 80px;
+  background: #000;
+  color: #fff;
+}
+
+.navbar h1{
+  font-size: 2.5rem;
+}
+
+.navlink{
+  display: flex;
+  gap: 100px;
+}
+
+.navlink a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navlink .active{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.Home .heading{
+  text-align: center;
+  font-size: 3rem;
+  margin-block: 10px;
+}
+
+.Home h3{
+  font-size: 2.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* gap: 15px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards-container .card {
+  width: 400px;
+  /* height: 800px; */
+  padding: 0px 0px;
+  padding-top: 15px;
+  margin-block: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.cards-container .card img{
+  /* width: 200px; */
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards-container .card h3{
+  text-align: center;
+  margin-block: 10px;
+  font-size: 2rem;
+}
+
+.cards-container .card p{
+  /* text-align: center; */
+  font-size: 1rem;
+  margin: 5px 20px;
+}
+
+.card .price{
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* margin-block: 10px; */
+  align-self: flex-start;
+  margin: 5px 20px;
+}
+
+.card button{
+  /* margin-block: 30px; */
+  font-size: 1.2rem;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card button:hover, .item-container button:hover{
+  background-color: rgb(97, 97, 235);
+}
+
+.Cart{
+  margin-inline: 30px;
+}
+
+.Cart h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-block: 30px;
+}
+
+.items{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.item-container{
+  border: 2px solid red;
+  width: 400px;
+  height: 400px;
+  padding-top: 15px;
+  margin-block: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.item-container button{
+  font-size: 1.2rem;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100%;
+}
+
+.item-container img{
+  width: 100%;
+  height: 200px;
+}
+
+.item-container .price, .item-container .title{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 10px;
 }
